@@ -3,7 +3,7 @@
 session_start();
 
 if(!$_SESSION['userExists'])
-    header("location: ".$_SERVER['HTTP_ORIGIN'] . '/public');
+    header("location: ".$_SERVER['HTTP_ORIGIN'] . '');
 
 include_once __DIR__."/../vendor/autoload.php";
 
@@ -19,7 +19,7 @@ if(isset($_POST['token'])){
     if($g->checkCode($secret,$token)){
         header("location: ".$_SERVER['HTTP_ORIGIN'] . "/pages/inicial.php");
     }else{
-        header("location: ".$_SERVER['HTTP_ORIGIN'] . "/public?m=".base64_encode("Token inválido ou expirado!"));
+        header("location: ".$_SERVER['HTTP_ORIGIN'] . "?m=".base64_encode("Token inválido ou expirado!"));
     }
     die();
 }

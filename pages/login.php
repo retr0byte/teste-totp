@@ -4,7 +4,7 @@
 session_start();
 
 if(!$_SESSION['userExists'])
-    header("location: ".$_SERVER['HTTP_ORIGIN'] . '/public');
+    header("location: ".$_SERVER['HTTP_ORIGIN'] . '');
 
 include_once __DIR__."/../vendor/autoload.php";
 

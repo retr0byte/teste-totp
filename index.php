@@ -5,7 +5,7 @@ isset($_SESSION) ? session_destroy() : null;
 if(isset($_GET['m'])){
     echo "<script>
             alert(`".base64_decode($_GET['m'])."`)
-            location.replace(`/public`)
+            location.replace(location.origin)
         </script>";
 }
 ?>
@@ -111,7 +111,7 @@ if(isset($_GET['m'])){
 
 <div class="fake-login">
     <div class="formContent">
-        <div id="fake-login-logo"><img src="/images/logo.png" alt=""></div>
+        <div id="fake-login-logo"><img src="images/logo.png" alt=""></div>
         <div id="login-status-message"></div>
         <form action="/services/checkCAPTCHA.php" method="post" id="formCAPTCHA">
             <input type="text" name="username" id="username" placeholder="Usuário: ">

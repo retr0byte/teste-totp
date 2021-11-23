@@ -32,7 +32,7 @@ if(isset($_POST['form-captcha-submit'])) {
             header("location:$url");
         }
     }else{
-        header("location: ".$_SERVER['HTTP_ORIGIN'] . "/public?m=".base64_encode("Usuário não encontrado!"));
+        header("location: ".$_SERVER['HTTP_ORIGIN'] . "?m=".base64_encode("Usuário não encontrado!"));
     }
 
 }
