@@ -1,8 +1,11 @@
 {
     "autoload": {
-        "psr-4": {}
+        "psr-4": {
+            "Source\\": "Source/"
+        }
     },
     "require": {
-        "sonata-project/google-authenticator": "^2.3"
+        "sonata-project/google-authenticator": "^2.3",
+      "ext-pdo": "*"
     }
 }

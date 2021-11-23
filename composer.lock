@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "430833c5dfe76f867249dcaff8719516",
+    "content-hash": "674dfbc9740310f7ab1622686a6b66e6",
     "packages": [
         {
             "name": "sonata-project/google-authenticator",
@@ -92,7 +92,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-pdo": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
 }
