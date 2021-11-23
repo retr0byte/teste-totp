@@ -17,7 +17,6 @@ $secret = $rs->generate();
 
 //gambiarra
 echo "<script>localStorage.setItem('seckey',`$secret`)</script>";
-echo $secret;
 
 //$secret = 'XVQ2UIGO75XRUKJO';
 
