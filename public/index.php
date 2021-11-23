@@ -111,7 +111,7 @@ if(isset($_GET['m'])){
 
 <div class="fake-login">
     <div class="formContent">
-        <div id="fake-login-logo"><img src="../images/logo.png" alt=""></div>
+        <div id="fake-login-logo"><img src="/images/logo.png" alt=""></div>
         <div id="login-status-message"></div>
         <form action="/services/checkCAPTCHA.php" method="post" id="formCAPTCHA">
             <input type="text" name="username" id="username" placeholder="Usuário: ">
