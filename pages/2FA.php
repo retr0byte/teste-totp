@@ -8,11 +8,14 @@ if(!$_SESSION['userExists'])
 include_once __DIR__."/../vendor/autoload.php";
 
 use Google\Authenticator\GoogleAuthenticator;
+use Source\Class\RandomString;
 
 $g = new GoogleAuthenticator();
 
-// 16 chars
-$secret = 'XVQ2UIGO75XRUKJO';
+$rs = new RandomString();
+$secret = $rs->generate(32);
+
+$_SESSION['seckey'] = $secret;
 
 ?>
 

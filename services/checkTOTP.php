@@ -11,7 +11,7 @@ use Google\Authenticator\GoogleAuthenticator;
 
 $g = new GoogleAuthenticator();
 
-$secret = 'XVQ2UIGO75XRUKJO';
+$secret = $_SESSION['seckey'];
 
 if(isset($_POST['token'])){
     $token = $_POST["token"];
