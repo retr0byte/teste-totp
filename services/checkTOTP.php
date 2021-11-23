@@ -11,12 +11,11 @@ use Google\Authenticator\GoogleAuthenticator;
 
 $g = new GoogleAuthenticator();
 
-$secret = $_SESSION['seckey'];
+//$secret = 'XVQ2UIGO75XRUKJO';
 
-echo $secret;
-
-if(isset($_POST['token'])){
+if(isset($_POST['token']) && isset($_POST['seckey'])){
     $token = $_POST["token"];
+    $secret = $_POST["seckey"];
 
     if($g->checkCode($secret,$token)){
         header("location: ".$_SERVER['HTTP_ORIGIN'] . "/pages/inicial.php");

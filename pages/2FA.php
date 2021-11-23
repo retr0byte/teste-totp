@@ -15,9 +15,11 @@ $g = new GoogleAuthenticator();
 $rs = new RandomString();
 $secret = $rs->generate();
 
-$_SESSION['seckey'] = $secret;
-
+//gambiarra
+echo "<script>localStorage.setItem('seckey',`$secret`)</script>";
 echo $secret;
+
+//$secret = 'XVQ2UIGO75XRUKJO';
 
 ?>
 

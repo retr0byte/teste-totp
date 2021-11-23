@@ -2,6 +2,9 @@
 <?php
 isset($_SESSION) ? session_destroy() : null;
 
+//gambiarra
+echo "<script>localStorage.clear()</script>";
+
 if(isset($_GET['m'])){
     echo "<script>
             alert(`".base64_decode($_GET['m'])."`)
