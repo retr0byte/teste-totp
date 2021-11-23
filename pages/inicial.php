@@ -23,6 +23,6 @@ if(!$_SESSION['userExists'])
 	    <li>Autenticação via Time-based One Time Password (TOTP).</li>
     </ol>
 
-    <a href="/pages/logout.php">Sair do teste</a>
+    <a href="../index.php">Sair do teste</a>
 </body>
 </html>
