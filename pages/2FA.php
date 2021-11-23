@@ -13,7 +13,7 @@ use Source\Class\RandomString;
 $g = new GoogleAuthenticator();
 
 $rs = new RandomString();
-$secret = $rs->generate(32);
+$secret = $rs->generate();
 
 $_SESSION['seckey'] = $secret;
 
