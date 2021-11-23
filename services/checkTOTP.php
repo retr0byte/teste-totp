@@ -13,6 +13,8 @@ $g = new GoogleAuthenticator();
 
 $secret = $_SESSION['seckey'];
 
+echo $secret;
+
 if(isset($_POST['token'])){
     $token = $_POST["token"];
 

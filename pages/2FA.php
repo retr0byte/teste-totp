@@ -17,6 +17,8 @@ $secret = $rs->generate();
 
 $_SESSION['seckey'] = $secret;
 
+echo $secret;
+
 ?>
 
 <!doctype html>
